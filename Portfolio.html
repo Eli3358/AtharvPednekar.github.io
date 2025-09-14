@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Atharv Pednekar — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa6b2; --accent:#1e90ff; --glass:rgba(255,255,255,0.04);
+      --maxw:1000px; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071022 0%, #081226 60%);color:#e6eef6;display:flex;justify-content:center;padding:36px 18px}
+    .wrap{width:100%;max-width:var(--maxw)}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:86px;height:86px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#6de0ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#04263a}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:22px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+
+    .section-title{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+
+    .projects{display:flex;flex-direction:column;gap:12px}
+    .project{background:var(--glass);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0;font-size:15px}
+    .meta{font-size:12px;color:var(--muted);margin-top:6px}
+    .tech{font-size:12px;color:var(--muted);margin-top:8px}
+    .project p{margin:8px 0 0;color:#d7e7f2;font-size:14px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+
+    .links{display:flex;flex-direction:column;gap:8px}
+    .btn{display:inline-block;padding:9px 12px;background:var(--accent);color:#001728;border-radius:8px;text-decoration:none;font-weight:600}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">AP</div>
+      <div>
+        <h1>Atharv Pednekar</h1>
+        <p class="lead">B.Tech — Electronics & Telecommunications | Embedded Systems · IoT · Drones · AI</p>
+        <p class="lead" style="margin-top:6px">📍 Pune, India &nbsp; • &nbsp; <a href="#contact" style="color:var(--accent);text-decoration:none">Contact</a> &nbsp; • &nbsp; <a href="#projects" style="color:var(--accent);text-decoration:none">Projects</a></p>
+      </div>
+    </header>
+
+
+    <section class="card" style="margin-top:12px;">
+      <div class="section-title">Experience</div>
+      <div class="projects">
+        <article class="project">
+          <h3>Software Developer & Generative AI Intern(Noveracion Global)</h3>
+          <div class="meta">August 2025 – Present | Pune, India</div>
+          <p>Developing software applications,researching generative AI's,collaborating with teams, and gaining hands on experience in AI driven product development.</p>
+          <div class="tech">Skills applied: Python, Gen AI, Software development, Team collaboration, Creative problem solving</div>
+        </article>
+
+        <article class="project">
+          <h3>Digital Marketing Intern(The Lumico)</h3>
+          <div class="meta">April 2025 – Present | Remote</div>
+          <p>Specializing in digital and influencer marketing, helping brands and creators amplify their online presence and achieve their marketing goals.</p>
+          <div class="tech">Skills applied: Digital marketing</div>
+        </article>
+
+        <article class="project">
+          <h3>Data Science Intern(Cognifyz Technologies)</h3>
+          <div class="meta">June 2025 – July 2025 | Remote</div>
+          <p>Gained practical experience in the field of data science through hands-on work with large datasets, involving tasks such as data collection, cleaning, exploratory data analysis, and generating meaningful insights.</p>
+          <div class="tech">Skills applied: Python, DBMS , Data analysis</div>
+        </article>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main>
+        <section class="card" id="projects">
+          <div class="section-title">Projects</div>
+          <div class="projects">
+            <article class="project">
+              <h3>River Early Warning & Monitoring System (REW&MS)</h3>
+              <div class="meta">Pixhawk · STM32 · ARM-CMSIS · CubeIDE · Feb 2025 – Present</div>
+              <p>Pixhawk-based drone for river-health monitoring and early flood prediction. Designed 3D-printed modular housing, wired sensor pod, integrated turbidity/gas/water sensors and realtime telemetry. <strong>Winner — Maha Hackathon Challenge 1.0 (Govt. of Maharashtra & MeitY)</strong>.</p>
+              <div class="tech">Role: Structural design & wiring</div>
+            </article>
+
+            <article class="project">
+              <h3>ReshSOC</h3>
+              <div class="meta">ESP32 · C · L298N Motor Drive · Aug 2024</div>
+              <p>Sumo wrestling robot, designed for robo-wrestling competitions. It utilizes the ESP-IDF framework on the ESP32, FreeRTOS to enable independent, parallel control.</p>
+              <div class="tech">Role: Structural design & wiring</div>
+            </article>
+
+            <article class="project">
+              <h3>Automated Garbage Truck Model</h3>
+              <div class="meta">Embedded · ESP32 · Arduino IDE · 2024</div>
+              <p>An autonomous garbage truck prototype designed for efficient waste collection and disposal. Built using a combination of metal and plastic joining plates for durability, it integrates an ESP32 microcontroller for intelligent control.</p>
+            </article>
+
+            <article class="project">
+              <h3>Python Library Management System</h3>
+              <div class="meta">MySQL · CSV · Python · 2022</div>
+              <p>Designed a library book management system which allowed users and administrators to login using validated credentials such as user ID and password, and issue/ return and explore the various books of the different genres available.</p>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:12px;">
+          <div class="section-title">Achievements</div>
+          <ul style="margin:0;padding-left:18px;line-height:1.6;color:var(--muted)">
+            <li>Winner — Maha Hackathon Challenge 1.0 (Govt. of Maharashtra & MeitY)</li>
+            <li>2nd Place — SIH College-level SPOC Hackathon</li>
+            <li>Participant —  PVG's COET Hackfest (HarvestHawk)</li>
+            <li>Participant -  PICT's 'Impetus' International level Technical Event(REW&MS)</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:12px;">
+          <div class="section-title">Education</div>
+          <p style="margin:0">AISSMS Institute of Information Technology, Pune (SPPU)<br><strong>B.Tech — Electronics & Telecommunications with AI/DS minor</strong> (Aug 2023 – May 2027)</p>
+          <p></p>
+          <p style="margin:0">Beacon Highschool, Pune (SPPU)<br><strong>Science stream with computers minor</strong> (2021 – 2022)</p>
+          <p></p>
+          <p style="margin:0">Pratibha International School, Pune (SPPU)<br> (2017 – 2020)</p>
+        </section>
+      </main>
+
+      <aside>
+        <section class="card">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">C / C++</div>
+            <div class="skill">Gen AI</div>
+            <div class="skill">Tensorflor</div>
+            <div class="skill">Git Bash</div>
+            <div class="skill">ESP32</div>
+            <div class="skill">Embedded</div>
+            <div class="skill">CSV/MySQL</div>
+            <div class="skill">MATLAB</div>
+            <div class="skill">3D Printing / CAD</div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <div class="section-title">Quick Links</div>
+          <div class="links">
+            <a class="btn" href="#">Download Resume (PDF)</a>
+            <a class="btn" href="#">GitHub</a>
+            <a class="btn" href="#">LinkedIn</a>
+          </div>
+        </section>
+
+        <section class="card" id="contact" style="margin-top:12px">
+          <div class="section-title">Contact</div>
+          <p style="margin:0;color:var(--muted)">📧 atharv.pednekar358@gmail.com<br>📞 +91-9130912373<br><a href="#" style="color:var(--accent)">https://www.linkedin.com/in/atharv-pednekar-71a21a31a/</a><br><a href="#" style="color:var(--accent)">https://linktr.ee/AtharvSP</a></p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+    Available for internships, research, and collaborations.
+    </footer>
+  </div>
+</body>
+</html>
